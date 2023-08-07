@@ -8,6 +8,7 @@ import { searchMovies } from '../../../utils/utilities';
 const Navbar = () => {
     const [searchValue, setSearchValue] = useState("");
     const [searchResults, setSearchResults] = useState([]);
+    
     const handleInput = (event) => {
       setSearchValue(event.target.value);
     };
@@ -54,7 +55,7 @@ const Navbar = () => {
                   alt={movie.title}
                 />
                 <h5>{movie.title}</h5>
-                <p>{movie.overview}</p>
+               
               </div>
             ))}
           </div>
